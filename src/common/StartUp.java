@@ -22,10 +22,10 @@ public class StartUp {
 
         //Lab 1
         Set<Dog> dogSet = new TreeSet<>();
-        dogSet.add(new Dog("Sasha", 1,"555"));
-        dogSet.add(new Dog("Mikey",10,"333"));
-        dogSet.add(new Dog("Mikey", 14,"555"));//dupe
-        dogSet.add(new Dog("Cooper",7,"888"));
+        dogSet.add(new Dog("Fido", 1,"001"));
+        dogSet.add(new Dog("Rex",10,"002"));
+        dogSet.add(new Dog("Rex", 14,"001"));//dupe
+        dogSet.add(new Dog("Wolfie",7,"003"));
         
         System.out.println("Lab 1: TreeSet Sort By Primary (Rabies ID)");
         for(Dog dog : dogSet) System.out.println(dog);
@@ -39,10 +39,10 @@ public class StartUp {
         
         //Lab 3
         Map<String,Dog> dogMap = new TreeMap<>();
-        dogMap.put("1", new Dog("Sasha", 1,"555"));
-        dogMap.put("2",new Dog("Mikey",10,"333"));
-        dogMap.put("3",new Dog("Cooper",7,"888"));
-        dogMap.put("4",new Dog("Mikey", 14, "555")); //Duplicate
+        dogMap.put("1", new Dog("Fido", 1,"001"));
+        dogMap.put("2",new Dog("Rex",10,"002"));
+        dogMap.put("3",new Dog("Wolfie",7,"003"));
+        dogMap.put("4",new Dog("Rex", 14, "001")); //Duplicate
         
         Collection<Dog> values = dogMap.values();
         List<Dog> dogListFromMap = new ArrayList<>(values);
